@@ -1,10 +1,10 @@
-﻿using AppKit;
+using AppKit;
 using Foundation;
 
 namespace Questioner
 {
 	[Register("AppDelegate")]
-	public class AppDelegate : NSApplicationDelegate
+	public partial class AppDelegate : NSApplicationDelegate
 	{
 		public AppDelegate()
 		{
