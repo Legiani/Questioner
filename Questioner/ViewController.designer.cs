@@ -38,15 +38,7 @@ namespace Questioner
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (hodnotaA != null) {
-				hodnotaA.Dispose ();
-				hodnotaA = null;
-			}
 
-			if (hodnotaB != null) {
-				hodnotaB.Dispose ();
-				hodnotaB = null;
-			}
 
 			if (levl != null) {
 				levl.Dispose ();

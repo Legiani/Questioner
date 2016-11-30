@@ -1,5 +1,4 @@
 ﻿using System;
-
 using AppKit;
 using Foundation;
 
@@ -16,6 +15,10 @@ namespace Questioner
 			base.ViewDidLoad();
 
 			// Do any additional setup after loading the view.
+		}
+
+		public void hodnot(bool odpoved) { 
+		
 		}
 
 		public override NSObject RepresentedObject
