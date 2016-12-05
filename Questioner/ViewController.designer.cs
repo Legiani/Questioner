@@ -1,6 +1,6 @@
 // WARNING
 //
-// This file has been generated automatically by Xamarin Studio to store outlets and
+// This file has been generated automatically by Visual Studio to store outlets and
 // actions made in the UI designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
@@ -13,13 +13,16 @@ namespace Questioner
 	partial class ViewController
 	{
 		[Outlet]
+		AppKit.NSLevelIndicator bod { get; set; }
+
+		[Outlet]
 		AppKit.NSTextField hodnotaA { get; set; }
 
 		[Outlet]
 		AppKit.NSTextField hodnotaB { get; set; }
 
 		[Outlet]
-		AppKit.NSLevelIndicator levl { get; set; }
+		AppKit.NSTextField levl { get; set; }
 
 		[Outlet]
 		AppKit.NSTextField operace { get; set; }
@@ -30,6 +33,9 @@ namespace Questioner
 		[Outlet]
 		AppKit.NSTextField textvis2 { get; set; }
 
+		[Action ("body:")]
+		partial void body (Foundation.NSObject sender);
+
 		[Action ("textsend1:")]
 		partial void textsend1 (Foundation.NSObject sender);
 
@@ -38,7 +44,20 @@ namespace Questioner
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (hodnotaA != null) {
+				hodnotaA.Dispose ();
+				hodnotaA = null;
+			}
 
+			if (hodnotaB != null) {
+				hodnotaB.Dispose ();
+				hodnotaB = null;
+			}
+
+			if (bod != null) {
+				bod.Dispose ();
+				bod = null;
+			}
 
 			if (levl != null) {
 				levl.Dispose ();
